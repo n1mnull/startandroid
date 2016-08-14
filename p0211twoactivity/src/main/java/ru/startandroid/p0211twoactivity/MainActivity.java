@@ -1,5 +1,6 @@
 package ru.startandroid.p0211twoactivity;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -22,7 +23,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.btnActTwo:
-                // TODO Call second activity
+                Intent intent = new Intent(this, Main2Activity.class);
+                startActivity(intent);
                 break;
             default:
                 break;
